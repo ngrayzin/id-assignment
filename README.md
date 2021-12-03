@@ -30,7 +30,8 @@ Other features i would like is a working searchbar. I did try to code it out, ho
 it does not synergize with my shopping cart code and the codes effect each other.
 If I had more time, I could have code the search bar in a different apporach.
 
-I have use java script to do some of my functions like the shopping cart.
+The phone view for my website is fine and boxes will flex or resize to the way i wanted. Hoever, 
+some of the image height is obvious and some are not directly in the middle but looks in the middle. 
 
 ...........credits.....................
 i received insipration from YOASOBI main website:https://www.yoasobi-music.jp/
