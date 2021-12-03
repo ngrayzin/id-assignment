@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+  
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  </head>
+<div class="context">
+
+      <header>
+        <div class="image-box"><a class="cd-logo" href="index.html"><img src= "image/header.svg" alt="Logo" width = "200" ></a></div>
+      </header>
+
+
+      <span style="font-size:30px;cursor:pointer;" onclick="openNav()" class="menu-logo">&#9776; </span>
+        
+      <nav>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <ul class="cd-primary-nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="profile.html">profile</a></li>
+            <li><a href="performance.html">performances</a></li>
+            <li><a href="songs.html">songs</a></li>
+            <li><a href="merch.html">merch</a></li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+        </head>
+          <body> 
+            <br><br><br>
+          
+        <section>
+          <h3 style="padding:0% 15% 10% 15%;">performaces</h3>
+          <div style="padding:0% 15% 0% 15%;">
+              <h3>event1</h3>
+              <p><img src="image/event1.jpg" alt="event1" class = "per">The first live audience "NICE TO MEET YOU" will be held at Nippon Budokan!<br>[Live information]<br>
+                Performance name: YOASOBI "NICE TO MEET YOU"<br>
+                Venue: Nippon Budokan<br>
+                Cast: YOASOBI<br>
+              <button onclick="myFunction()">Get your tickets!</button>
+              <form id="myDIV" style = "display: none;">
+                    <label>First name:</label><br>
+                    <input type="text" required><br>
+                    <label>Last name:</label><br>
+                    <input type="text" required><br>
+                    <p>Choose timing:</p>
+                    <input type="radio" id="html" name="fav_language" value="HTML" required>
+                    <label for = "html">Saturday,December 4, 2021 Open 17:00 / Start 18:30</label><br>
+                    <input type="radio" id="css" name="fav_language" value="css" required>
+                    <label for = "css"> Sunday,December 5 Open 16:00 / Start 17:30</label><br>
+                    <label for="points">number of tickets($67 each ticket):</label>
+                    <input type="number" id = "points" step="1" min = "0" required><br>
+                    <button class="button-48" role="button" value="Submit"><span class="text">submit</span></button>
+                </form>
+              </p><br><br><br><br><br><br><br><br><br><br><br>
+              <div style = "padding: 15% 0% 0% 0%"></div>
+              <h3>event2</h3>
+              <p><img src="image/event2.png" alt="event2" class = "per"><br><br><br><br>■ Delivery method: YouTube live streaming<br>
+
+                YOASOBI Official YouTube Channel: <a href = "https://www.youtube.com/c/Ayase0404" target="_blank">https://www.youtube.com/c/Ayase0404</a><br>
+                
+                ■ Date: July 4, 2021 (Sun) Distribution start 18:00 / Main story start 19:00<br></p><br><br><br><br><br><br><br><br><br><br><br>
+
+
+                <div style = "padding: 15% 0% 0% 0%"></div>
+                <h3>event3</h3>
+              <p><img src="image/event3.jpg" alt="event3" class = "per"><br><br><br><br>YOASOBI 1st LIVE "KEEP OUT THEATER"<br>
+                [Date] February 14, 2021 (Sun)<br>
+                [Time] Distribution start: 17: 00 / Start: 18:00 End: 19:00 Scheduled<br>
+                  <button onclick="my2ndFunction()">Get your tickets!</button>
+                  <form id="my2ndDIV" style = "display: none;">
+                    <label>First name:</label><br>
+                    <input type="text" required><br>
+                    <label>Last name:</label><br>
+                    <input type="text" required><br>
+                    <label for="points">number of tickets($40 each ticket):</label>
+                    <input type="number" id = "points" step="1" min = "0" required><br><br>
+                    <button class="button-48" role="button" value="Submit"><span class="text">submit</span></button> 
+                  </form>
+              </p><br><br><br><br><br><br><br><br>
+              
+          
+        </section>
+      </body>
+    </div>
+  <div class="area" >
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+  </div >
+
+     
+
+
+        
+      <script src="script.js">
+        function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+
+
+
+      </script>
+    </body>
+  </html>
