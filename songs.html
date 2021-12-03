@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+  
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.column {
+			float: left;
+			width: 33.33%;
+			padding: 5px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	</style>
+<div class="context">
+</head>
+<header>
+  <div class="image-box"><a class="cd-logo" href="index.html"><img src= "image/header.svg" alt="Logo" width = "200" ></a></div>
+  </header>
+
+  <span style="font-size:30px;cursor:pointer;" onclick="openNav()" class="menu-logo">&#9776; </span>
+  
+  <nav>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <ul class="cd-primary-nav">
+        <li><a href="index.html">home</a></li>
+        <li><a href="profile.html">profile</a></li>
+        <li><a href="performance.html">performances</a></li>
+        <li><a href="songs.html">songs</a></li>
+        <li><a href="merch.html">merch</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+  <body> 
+     
+     <section>
+       <h3 style="padding:10% 15% 0% 15%;">songs</h3>
+       <div class = "songlayout">
+       <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/kzdJkT4kp-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </a>
+        <div class="desc">Halzon | click for story</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/nhOhFOoURnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </a>
+        <div class="desc">RGB | click for story</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <iframe width="560" height="315"src="https://www.youtube.com/embed/sAuEeM_6zpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </a>
+        <div class="desc">Tracing that dream | click for story</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <iframe width="560" height="315"  src="https://www.youtube.com/embed/8iuLXODzL04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </a>
+        <div class="desc">Maybe | click for story</div>
+      </div>
+
+      <div class="gallery">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vd3IlOjSUGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a target="_blank" href="https://monogatary.com/story/146439">
+          <div class="desc">Haruka | click for story</div>
+        </a>
+        
+      </div>
+
+      <div class="gallery">
+        <iframe width="560" height="315"  src="https://www.youtube.com/embed/vcGbefQBvJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a target="_blank" href="https://monogatary.com/story/50040">
+          <div class="desc">Encore | click for story</div>
+        </a>
+       
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mnta9Pp2LqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </a>
+        <div class="desc">Love Letter | click for story</div>
+      </div>
+
+      <div class="gallery">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y4nEEZwckuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a target="_blank" href="https://www.bourbon.co.jp/alfort/originaltext/">
+          <div class="desc">Blue | click for story</div>
+        </a>
+        
+      </div>
+
+      <div class="gallery" style = "margin-bottom: 5%;">
+        <a target="_blank" href="img_mountains.jpg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/K1Tz2yNmamI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </a>
+        <div class="desc">Just a little more | click for story</div>
+      </div>
+    </div>
+
+
+     </section>
+</div>
+<div class="area" >
+  <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+  </ul>
+</div >
+
+
+
+        
+    <script src="script.js">
+      function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+    </script>
+  </body>
+</html>
