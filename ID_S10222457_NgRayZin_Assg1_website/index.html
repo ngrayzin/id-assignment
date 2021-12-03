@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>yoaosbi website</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+  
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.column {
+			float: left;
+			width: 33.33%;
+			padding: 10px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	</style>
+<div class="context">
+
+	<header>
+		<div class="image-box"><a class="cd-logo"  href="index.html"><img src= "image/header.svg" alt="Logo" width = "200" ></a></div>
+  </header>
+
+    
+
+  <span style="font-size:30px;cursor:pointer;" onclick="openNav()" class="menu-logo">&#9776; </span>
+  <nav>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <ul class="cd-primary-nav">
+      <li><a href="index.html">home</a></li>
+      <li><a href="profile.html">profile</a></li>
+      <li><a href="performance.html">performances</a></li>
+      <li><a href="songs.html">songs</a></li>
+      <li><a href="merch.html">merch</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  </head>
+
+  <body> 
+     <br><br><br>
+     <div class="image-box"><img src= "image/title.png" alt="Logo" class="center" style="padding:10% 0% 20% 0%;" ></div>
+     
+     <section data-aos="fade-right">
+     <h3 style="padding:0% 15% 0% 15%;">performaces</h3>
+     <div class="row"style="padding:0% 15% 0% 14%;">
+        <div class="column">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="image/event1.png" alt="event1" style="width:100%; height:auto; border: 5px solid #555;">
+              </div>
+                <div class="flip-box-back" id = "img3">
+                  <a href = "performance.html"><h2 style = "text-align:center;padding:40% 0 0 0">event1</h2></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="image/event2.png" alt="event2" style="width:100%; height:auto; border: 5px solid #555;">
+                </div>
+                  <div class="flip-box-back" id = "img3">
+                    <a href = "performance.html"><h2 style = "text-align:center;padding:40% 0 0 0"">event2</h2></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column" >
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="image/event3.jpg" alt="event3"  id = "img3" style="width:100%; border: 5px solid #555;">
+                  </div>
+                    <div class="flip-box-back"  id = "img3">
+                      <a href = "performance.html"><h2 style = "text-align:center;padding:40% 0 0 0">event3</h2></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+     </section>
+
+     <section>
+       <h3 style="padding:30% 15% 0% 15%;">profile</h3>
+       <div class="dropdown">
+        <div class="image-box"><img src= "image/yoasobi.jpg" alt="Logo" class="center" id="dropbtn"></div>
+        <div class="dropdown-content">
+          <p style = "font-size: 16px;margin-top: 8px;padding:0% 15% 0% 15%;letter-spacing: 1px;">
+          A "unit that makes novels into music" consisting of composer Ayase and vocal ikura. Released the first CD "THE BOOK" on January 6, 2021. The gorgeous specifications attracted a lot of attention, and while recording the 2nd place in the Oricon daily ranking for the first time, all the songs were simultaneously ranked within the 15th place on the Apple Music streaming chart. The range of development is expanding to areas other than music, such as making original novels into books and movies.
+          </p>
+        </div>
+      </div>
+      <a  href = "profile.html"><button class="button-49" role="button">profile ></button></a>          
+     </section>
+     
+
+     <section>
+       <h3 style="padding:10% 15% 0% 15%;">songs</h3>
+       <div class="scrolling-wrapper">
+  <div class="card"><iframe width="560" height="315" src="https://www.youtube.com/embed/kzdJkT4kp-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="card" ><iframe width="560" height="315" src="https://www.youtube.com/embed/nhOhFOoURnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="card"><iframe width="560" height="315"src="https://www.youtube.com/embed/sAuEeM_6zpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="card"><iframe width="560" height="315"  src="https://www.youtube.com/embed/8iuLXODzL04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="card"><iframe width="560" height="315" src="https://www.youtube.com/embed/vd3IlOjSUGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="card"><iframe width="560" height="315"  src="https://www.youtube.com/embed/vcGbefQBvJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="card"><iframe width="560" height="315" src="https://www.youtube.com/embed/mnta9Pp2LqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="card"><iframe width="560" height="315" src="https://www.youtube.com/embed/Y4nEEZwckuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="card"><iframe width="560" height="315" src="https://www.youtube.com/embed/K1Tz2yNmamI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  </div>
+     </section>
+
+     <section>
+       <h3 style="padding:10% 15% 0% 15%;">merch</h3>
+       <div class="scrolling-wrapper">
+  <div class="card" style = "margin-left:5%;"><div class="image-box"><img src= "image/shirt1.webp" alt="Logo" class="center"></div></div>
+  <div class="card"><div class="image-box"><img src= "image/shirt2.webp" alt="Logo" class="center"></div></div>
+  <div class="card"><div class="image-box"><img src= "image/shirt3.webp" alt="Logo" class="center"></div></div>
+  <div class="card"><div class="image-box"><img src= "image/shirt4.webp" alt="Logo" class="center"></div></div>
+  <div class="card"><div class="image-box"><img src= "image/shirt5.webp" alt="Logo" class="center"></div></div>
+  <div class="card"><a  href = "merch.html"><button class="button-49" role="button">more ></button></a></div>
+      </div>  
+    </section>
+  </div>
+
+
+
+     <div class="area" >
+      <ul class="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+      </ul>
+    </div >
+
+        
+    <script src="script.js">
+      function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+    </script>
+  </body>
+</html>

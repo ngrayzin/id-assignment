@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.column {
+			float: left;
+			width: 33.33%;
+			padding: 5px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	</style>
+  </head>
+<div class="context">
+
+  <header>
+    <div class="image-box"><a class="cd-logo" href="index.html"><img src= "image/header.svg" alt="Logo" width = "200" ></a></div>
+    </header>
+
+    <span style="font-size:30px;cursor:pointer;" onclick="openNav()" class="menu-logo">&#9776; </span>
+    
+    <nav>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <ul class="cd-primary-nav">
+          <li><a href="index.html">home</a></li>
+          <li><a href="profile.html">profile</a></li>
+          <li><a href="performance.html">performances</a></li>
+          <li><a href="songs.html">songs</a></li>
+          <li><a href="merch.html">merch</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+    <body> 
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      
+      
+          <section>
+            <h3 style="padding:10% 15% 0% 15%;">merch</h3>
+      <div class="container">
+        <input type="radio" style = "display:none;" id="i1" name="images" checked />
+        <input type="radio" style = "display:none;"id="i2" name="images" />
+        <input type="radio" style = "display:none;"id="i3" name="images" />
+        <input type="radio" style = "display:none;"id="i4" name="images" />
+        <input type="radio" style = "display:none;"id="i5" name="images" />	
+        <input type="radio" style = "display:none;"id="i6" name="images" />
+        <input type="radio" style = "display:none;"id="i7" name="images" />
+        <input type="radio" style = "display:none;"id="i8" name="images" />
+        <input type="radio" style = "display:none;"id="i9" name="images" />
+        
+          <div class="slide_img" id="one">			
+              
+              <img src="image/shirt1.webp">
+              
+                <label class="prev" for="i9"><span>‹</span></label>
+                <label class="next" for="i2"><span>›</span></label>	
+            
+          </div>
+          
+          <div class="slide_img" id="two">
+            
+              <img src="image/shirt2.webp" >
+              
+                <label class="prev" for="i1"><span>‹</span></label>
+                <label class="next" for="i3"><span>›</span></label>
+            
+          </div>
+              
+          <div class="slide_img" id="three">
+              <img src="image/shirt3.webp">	
+              
+                <label class="prev" for="i2"><span>‹</span></label>
+                <label class="next" for="i4"><span>›</span></label>
+          </div>
+        
+          <div class="slide_img" id="four">
+              <img src="image/shirt4.webp">	
+              
+                <label class="prev" for="i3"><span>‹</span></label>
+                <label class="next" for="i5"><span>›</span></label>
+          </div>
+        
+          <div class="slide_img" id="five">
+              <img src="image/shirt5.webp">	
+              
+                <label class="prev" for="i4"><span>‹</span></label>
+                <label class="next" for="i6"><span>›</span></label>
+        
+          </div>
+
+          <div class="slide_img" id="six">
+            <img src="image/shirt6.webp">	
+            
+              <label class="prev" for="i5"><span>‹</span></label>
+              <label class="next" for="i7"><span>›</span></label>
+      
+        </div>
+
+        <div class="slide_img" id="seven">
+          <img src="image/shirt7.webp">	
+          
+            <label class="prev" for="i6"><span>‹</span></label>
+            <label class="next" for="i8"><span>›</span></label>
+    
+        </div>
+
+      <div class="slide_img" id="eight">
+        <img src="image/shirt8.webp">	
+        
+          <label class="prev" for="i7"><span>‹</span></label>
+          <label class="next" for="i9"><span>›</span></label>
+
+      </div>
+
+    <div class="slide_img" id="nine">
+      <img src="image/shirt9.webp">	
+      
+        <label class="prev" for="i8"><span>‹</span></label>
+        <label class="next" for="i1"><span>›</span></label>
+
+    </div>
+      
+        <div id="nav_slide">
+          <label for="i1" class="dots" id="dot1"></label>
+          <label for="i2" class="dots" id="dot2"></label>
+          <label for="i3" class="dots" id="dot3"></label>
+          <label for="i4" class="dots" id="dot4"></label>
+          <label for="i5" class="dots" id="dot5"></label>
+          <label for="i6" class="dots" id="dot6"></label>
+          <label for="i7" class="dots" id="dot7"></label>
+          <label for="i8" class="dots" id="dot8"></label>
+          <label for="i9" class="dots" id="dot9"></label>
+        </div>	
+      </div>
+          </section>
+    <section class = "sear">
+  <div class="wrap">
+    <div class="search">
+        <input id="myInput" type="text" class="searchTerm" placeholder="What are you looking for?">
+        <button type="submit" class="searchButton"><img src = "image/search.svg" style = "padding-left:2px;">
+        </button>
+        <a href = "#down"><button style = "background-color: transparent;border:0;"><img src = "image/shoppingcart.svg" class = "shoppingcart"></button></a>
+      </div>
+    </div>
+    </section>
+    <section class = "shirtlayout" id = "store-products">
+
+      <div class="shop">
+        <p style = "margin-left:39%" class = "shop-item-title"">white1</p>
+        <a target="_blank" href="image/shirt1.jpeg">
+          <div class="image-box"><img class="shop-item-image" src="image/shirt1.jpeg"></div>
+        </a>
+       <div class="desc">$50<br><br> <button class="button-48" role="button" value="Submit"><span class="text">add to cart</span></button> </div>
+     </div>
+     
+     <div class="shop">
+      <p style = "margin-left:38%" class = "shop-item-title">purple</p>
+       <a target="_blank" href="image/shirt2.jpeg">
+        <div class="image-box"><img class="shop-item-image" src="image/shirt2.jpeg"></div>
+        </a>
+       <div class="desc">$50<br><br> <button class="button-48" role="button" value="Submit"><span class="text">add to cart</span></button> </div>
+     </div>
+     
+     <div class="shop">
+      <p style = "margin-left:39%" class = "shop-item-title">white2</p>
+       <a target="_blank" href="image/shirt3.jpeg">
+        <div class="image-box"><img class="shop-item-image" src="image/shirt3.jpeg"></div>
+       </a>
+       <div class="desc">$50<br><br> <button class="button-48" role="button" value="Submit"><span class="text">add to cart</span></button></div>
+     </div>
+     
+     <div class="shop">
+      <p style = "margin-left:39%" class = "shop-item-title">beige</p>
+       <a target="_blank" href="image/shirt4.jpeg">
+        <div class="image-box"><img class="shop-item-image" src="image/shirt4.jpeg"></div>
+       </a>
+       <div class="desc">$50<br><br> <button class="button-48" role="button" value="Submit"><span class="text">add to cart</span></button></div>
+     </div>
+
+     <div class="shop" >
+      <p style = "margin-left:39%" class = "shop-item-title">black</p>
+       <a target="_blank" href="image/shirt5.jpeg">
+        <div class="image-box"><img class="shop-item-image" src="image/shirt5.jpeg"></div>
+       </a>
+       <div class="desc">$50<br><br> <button class="button-48" role="button" value="Submit"><span class="text">add to cart</span></button></div>
+       
+     </div>
+
+     <div class="shop" >
+      <p style = "margin-left:39%" class = "shop-item-title">white3</p>
+       <a target="_blank" href="image/shirt6.jpeg">
+        <div class="image-box"><img class="shop-item-image" src="image/shirt6.jpeg"></div>
+       </a>
+       <div class="desc">$50<br><br> <button class="button-48" role="button" value="Submit"><span class="text">add to cart</span></button></div>
+      
+     </div>
+
+     <div class="shop" >
+      <p style = "margin-left:39%" class = "shop-item-title">black2</p>
+       <a target="_blank" href="image/shirt7.jpeg">
+        <div class="image-box"><img class="shop-item-image" src="image/shirt7.jpeg"></div>
+       </a>
+       <div class="desc">$50<br><br> <button class="button-48" role="button" value="Submit"><span class="text">add to cart</span></button></div>
+     </div>
+
+     <div class="shop" >
+      <p style = "margin-left:39%" class = "shop-item-title">pink</p>
+       <a target="_blank" href="image/shirt8.jpeg">
+        <div class="image-box"><img class="shop-item-image" src="image/shirt8.jpeg"></div>
+       </a>
+       <div class="desc">$50<br><br> <button class="button-48" role="button" value="Submit"><span class="text">add to cart</span></button></div>
+       
+     </div>
+
+     <div class="shop" >
+      <p style = "margin-left:39%" class = "shop-item-title">white4</p>
+       <a target="_blank" href="image/shirt9.jpeg">
+        <div class="image-box"><img class="shop-item-image" src="image/shirt9.jpeg"></div>
+       </a>
+       <div class="desc">$50<br><br> <button class="button-48" role="button" value="Submit"><span class="text">add to cart</span></button></div>
+     </div><br><br><br>
+    </section>
+
+    <section class="container content-section" style = "background-color: transparent;" id = "down">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+      </div>
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+  </section>
+     
+</div>
+
+     <div class="area" >
+      <ul class="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+      </ul>
+    </div >
+
+
+        
+    <script src="script.js">
+      function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
+    </script>
+  </body>
+</html>
